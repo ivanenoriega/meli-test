@@ -32,6 +32,7 @@ npm install
 ```
 npm run start-dev
 ```
+Then go to http://localhost:3000/
 
 ## Live Demo
 
