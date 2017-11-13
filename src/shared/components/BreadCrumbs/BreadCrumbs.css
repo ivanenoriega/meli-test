@@ -1,0 +1,21 @@
+.breadcrumb {
+    padding: 0;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #666666;
+    display: -webkit-box;
+    background-color: unset;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "> ";
+}
+.breadcrumb .breadcrumb-item:last-child {
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .breadcrumb {
+        display: flex;
+        padding: 0 0 0 5px;
+    }
+}

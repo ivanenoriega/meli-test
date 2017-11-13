@@ -1,0 +1,125 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Meli",
+		"_postman_id": "46d871ef-33a3-7f60-fcf8-b9589a871e10",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/items?search=iphone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "iphone",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Item",
+			"request": {
+				"url": "http://localhost:3000/api/items/MLA672160044",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Meli Search",
+			"request": {
+				"url": {
+					"raw": "https://api.mercadolibre.com/sites/MLA/search?q=laptop&limit=4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadolibre",
+						"com"
+					],
+					"path": [
+						"sites",
+						"MLA",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "laptop",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "limit",
+							"value": "4",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Meli Item",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLA663213659",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Meli Item Description",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLA668791742/description",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Meli Categories",
+			"request": {
+				"url": "https://api.mercadolibre.com/categories/MLA81370",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
